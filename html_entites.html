@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Html entites</title>
+	<style>
+		/*body {
+			background-color: lightpink;
+		}
+
+		.myclass1 {
+			background-color: lightblue;
+			font-size: 20px;
+			border: 5px red;
+			box-shadow: 5px 5px 5px 5px rgba(248, 48, 148, 0.5);
+		}
+
+		.span {
+			color: deeppink;
+			font-weight: bolder;
+		}
+		ul{
+			background: darkturquoise;
+			width: 100%;
+			height: 50px;
+			text-align: center;
+		}
+		li{
+			display: inline;
+			line-height: 50px;
+			text-align: center;
+			padding: 10px;
+		}
+		a{
+			text-decoration: none;
+			color: darkred;
+			font-size: 24px;
+		}
+		a:hover{
+			background: lightpink;
+			padding: 10px;
+		}
+		*/
+		/*a:hover{
+			color: darkblue;
+			font-size: 22px;
+			background-color: dimgrey;
+		}
+		a:visited{
+			/*color: darkgoldenrod;*/
+			
+		/*}
+		p:first-letter{
+			color:#adef00;
+			font-size: 58px;
+		}
+		p::first-line{
+			color:#adef00;
+			font-size: 58px;
+		}
+		li:first-child{
+			background-color: dimgray;
+			color: darkmagenta;
+		}
+		li:last-child{
+			background-color: lightgreen;
+			color: darkmagenta;
+		}
+		li:nth-child(3){
+			background-color: lightcoral;
+			color: darkmagenta;
+		}
+		li:nth-last-child(2){
+			background-color: lightyellow;
+			color: darkmagenta;
+		}*/
+		li:nth-child(odd){
+			background-color: lightpink;
+		}
+		li:nth-child(even){
+			background-color: lightskyblue;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="myclass1">
+		<h1 id="top">This is my <span class="span">First</span> Para</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <span class="span">penatibus </span>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+			<span>this is span</span></p>
+		<p class="span">&copy;codekul.com</p>
+		<p class="span">&#123; codekul.com &#125;</p>
+	</div>
+	<ul>
+		<li class="active"><a href="Margin.html"> Home </a></li>
+		<li><a href="#"> Services </a></li>
+		<li><a href="#"> Portfolio </a></li>
+		<li><a href="#"> Gallery </a></li>
+		<li><a href="#"> About Us </a></li>
+		<li><a href="#"> Contact Us</a></li>
+	</ul>
+	<ul style="list-style-type: circle">
+		<li><a href="#"> Home </a></li>
+		<li><a href="#"> Services </a></li>
+		<li><a href="#"> Portfolio </a></li>
+		<li><a href="#"> Gallery </a></li>
+		<li><a href="#"> About Us </a></li>
+		<li><a href="#"> Contact Us</a></li>
+	</ul>
+	<ul style="list-style-type: square">
+		<li><a href="#"> Home </a></li>
+		<li><a href="#"> Services </a></li>
+		<li><a href="#"> Portfolio </a></li>
+		<li><a href="#"> Gallery </a></li>
+		<li><a href="#"> About Us </a></li>
+		<li><a href="#"> Contact Us</a></li>
+	</ul>
+	<ul style="list-style-type:none;">
+		<li><a href="#"> Home </a></li>
+		<li><a href="#"> Services </a></li>
+		<li><a href="#"> Portfolio </a></li>
+		<li><a href="#"> Gallery </a></li>
+		<li><a href="#"> About Us </a></li>
+		<li><a href="#"> Contact Us</a></li>
+	</ul>
+	<ol>
+		<li><a href="#"> Home </a></li>
+		<li><a href="#"> Services </a></li>
+		<li><a href="#"> Portfolio </a></li>
+		<li><a href="#"> Gallery </a></li>
+		<li><a href="#"> About Us </a></li>
+		<li><a href="#"> Contact Us</a></li>
+	</ol>
+	<ol type="A">
+		<li><a href="#"> Home </a></li>
+		<li><a href="#"> Services </a></li>
+		<li><a href="#"> Portfolio </a></li>
+		<li><a href="#"> Gallery </a></li>
+		<li><a href="#"> About Us </a></li>
+		<li><a href="#"> Contact Us</a></li>
+	</ol>
+	<ol type="a">
+		<li><a href="#"> Home </a></li>
+		<li><a href="#"> Services </a></li>
+		<li><a href="#"> Portfolio </a></li>
+		<li><a href="#"> Gallery </a></li>
+		<li><a href="#"> About Us </a></li>
+		<li><a href="#"> Contact Us</a></li>
+	</ol>
+	<ol type="I">
+		<li><a href="#"> Home </a></li>
+		<li><a href="#"> Services </a></li>
+		<li><a href="#"> Portfolio </a></li>
+		<li><a href="#"> Gallery </a></li>
+		<li><a href="#"> About Us </a></li>
+		<li><a href="#"> Contact Us</a></li>
+	</ol>
+	<ol type="i">
+		<li><a href="#"> Home </a></li>
+		<li><a href="#"> Services </a></li>
+		<li><a href="#"> Portfolio </a></li>
+		<li><a href="#"> Gallery </a></li>
+		<li><a href="#"> About Us </a></li>
+		<li><a href="#"> Contact Us</a></li>
+	</ol>
+	<ol type="I">
+		<li><a href="#"> Home </a></li>
+		<li><a href="#"> Services </a></li>
+		<li><a href="#top"> Portfolio </a>
+			<ul>
+				<li><a href="images.html#imgtop">Porfolio 1</a></li>
+				<li><a href="images.html#imgbut">Porfolio 2</a></li>
+				<li>Porfolio 3</li>
+				<li>Porfolio 4</li>
+				<li>Porfolio 5
+					<ol type="A">
+						<li>Porfolio 1</li>
+						<li>Porfolio 2</li>
+						<li>Porfolio 3</li>
+					</ol>
+				</li>
+			</ul>
+		</li>
+		<li><a href="#"> Gallery </a></li>
+		<li><a href="#"> About Us </a></li>
+		<li><a href="#"> Contact Us</a></li>
+		<a href="#">Home</a>
+	</ol>
+</body>
+
+</html>
