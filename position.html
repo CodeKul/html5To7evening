@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .relative {
+            position: fixed;
+            width: 250px;
+            height: 250px;
+            background: aqua;
+        }
+        .fixed{
+            position: relative;
+            width: 150px;
+            height: 150px;
+            background: lightgreen;
+            left: 550px;
+            bottom: 50px;
+            border-radius: 50%;
+            padding: 5px;
+            line-height: 25px;
+            box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+            border: 2px solid black;
+        }
+        img{
+            position: absolute;
+            border-radius: 6px;
+            box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+            margin:50px;
+        }
+        .squre{
+            background: yellow;
+            height: 25px;
+            width: 100px;
+            position: absolute;
+            z-index: 1;
+            left: 10px;
+            text-align: center;
+            padding: 2px;
+        }
+        
+        .zindex{
+            position: absolute;
+            left:450px;
+        }
+    </style>
+</head>
+
+<body>
+   <div class="relative">
+       <img src="./images/img1.jpeg" >
+        <p class="fixed">
+           Nulla consequat massa quis enim. Donec pede justo, fringilla vel, 
+        </p>
+        <div class="squre">
+        Yellow</div>
+        <div class="zindex">
+            <h1>z-index</h1>
+            <p>
+           Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+           </p>
+            
+        </div>
+    </div>
+</body>
+
+</html>

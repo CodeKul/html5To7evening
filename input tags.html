@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form _Element</title>
+</head>
+
+<body>
+    <form action="abc.php" method="get" novalidate id="send">
+       <p>Select : <select name="area">
+            <option value="0">--Select Any--</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="Four">Four</option>
+            <option value="5">Five</option>
+        </select></p> 
+        <p>Email : <input type="email" name="email" placeholder="abc@gmail.com" autocomplete="off"></p>
+        <p>Name : <input type="text" name="name" placeholder="ABC"></p>
+        
+        <p>Languages : 
+        <input list="lang">
+        <datalist id="lang">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="Javascript">Javascript</option>
+            <option value="Jquery">Jquery</option>
+            <option value="Bootstrap">Bootstrap</option>
+             <option value="Java">Java</option>
+        </datalist></p>
+        <p>Address : <textarea cols="30" rows="4">
+            
+        </textarea></p>
+        <p><input type="submit" value="Check Select"></p>
+    </form>
+    <p>Enter Number : <input type="text" name="number" form="send"></p>
+</body>
+</html>
