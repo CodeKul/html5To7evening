@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            background-color: lightpink;
+            border: 2px solid black;
+            transition: width 1s/*height 1s transform 1s*/
+            ;
+            /*            transition-delay: 1s;*/
+        }
+
+        div:hover {
+            width: 300px;
+            /*            height: 300px;*/
+            /*            transform: rotate(60deg);*/
+        }
+
+        .class1 {
+            transition-timing-function: ease;
+        }
+
+        .class2 {
+            transition-timing-function: ease-in;
+        }
+
+        .class3 {
+            transition-timing-function: ease-in-out;
+        }
+
+        .class5 {
+            transition-timing-function: ease-out;
+        }
+
+        .class6 {
+            transition-timing-function: step-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        This is transform property
+    </div>
+    <div class="class1">
+
+    </div>
+    <div class="class2">
+
+    </div>
+    <div class="class3">
+
+    </div>
+    <div class="class4">
+
+    </div>
+    <div class="class5">
+
+    </div>
+    <div class="class6">
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <style>
+        .class{
+            height: 150px;
+            width: 150px;
+            background-color: #F7CA18;
+            border:3px solid black;
+            position: relative;
+/*            animation-name: myAnimation;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-direction:reverse;
+            animation-iteration-count: infinite;
+            animation-delay: 3s;*/
+            animation: myAnimation 5s linear 3s reverse infinite;
+            
+        }
+        @keyframes myAnimation{
+            0%{
+                background-color: #CF000F;
+                left: 0px;
+                top:0px;
+            }
+            25%{
+               background-color: #013243;
+                left: 200px;
+                top:0px; 
+            }
+            50%{
+                background-color: #F62459;
+                left: 200px;
+                top:200px; 
+            }
+            75%{
+                background-color: #00e640;
+                left: 0px;
+                top:200px; 
+            }
+            100%{
+                background-color: #663399;
+                left: 0px;
+                top:0px; 
+            }
+            
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="class">
+        
+    </div>
+</body>
+</html>
